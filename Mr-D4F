@@ -24,15 +24,15 @@ echo "             \033[1;37mPILIH MENU " ;sleep 1
 
 echo
 
-echo " \033[0;32m[\033[0;31m1\033[0;32m] \033[0;31mTampilan Awal" ;sleep 0.1
+echo " \033[0;32m[\033[0;31m1\033[0;32m] \033[0;31mSPAM Sms dan Call" ;sleep 0.1
 
-echo " \033[0;32m[\033[0;31m2\033[0;32m] \033[0;31mMatesploit" ;sleep 0.1
+echo " \033[0;32m[\033[0;31m2\033[0;32m] \033[0;31mInstall Matesploit" ;sleep 0.1
 
 echo " \033[0;32m[\033[0;31m3\033[0;32m] \033[0;31mTroll Project" ;sleep 0.1
 
 echo " \033[0;32m[\033[0;31m4\033[0;32m] \033[0;31mInstall Bahan-Bahan" ;sleep 0.1
 
-echo " \033[0;32m[\033[0;31m5\033[0;32m] \033[0;31mEdit" ;sleep 0.1
+echo " \033[0;32m[\033[0;31m5\033[0;32m] \033[0;31mExit" ;sleep 0.1
 
 echo
 
@@ -44,7 +44,27 @@ if [ $pill = "1" ]
 
 then
 
-python m.py
+pkg update && pkg upgrade
+
+pkg install python2
+
+pkg install git
+
+pip2 install requests
+
+git clone https://github.com/Zidan-ID17/Spam-Tools
+
+
+
+
+
+
+
+cd Spam-Tools
+
+
+
+python2 umbrella.py
 
 fi
 
